@@ -2,10 +2,18 @@
 @use "./reset";
 
 //  Utilities
-@use  "./utilities";
+@use  "./utilities/utilities";
 
 //Components
 @use  "./components/components";
 
 // Pages
 @use "./pages/login";
+
+
+
+@media (max-width: 408px) {
+  :root{
+    font-size: 8px;
+  }
+}

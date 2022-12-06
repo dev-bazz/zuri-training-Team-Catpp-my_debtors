@@ -1,11 +1,13 @@
+@use "../utilities/utilities" as *;
+
 $backgroundColor: white;
 $primColor: blue;
 
 
-.Container{
+.sign-in{
     margin: auto;
-    width: 60%;
-    padding: 16px;
+    max-width: px-rem(700);
+    padding: px-rem(16);
     h1, p{
         text-align: center;
     }
@@ -13,7 +15,7 @@ $primColor: blue;
         width:100%;
       cursor: pointer;
         padding: 10px;
-        border-radius:50px;
+        border-radius: px-rem(50);
         background-color: $primColor;
       color: $backgroundColor;
       }
@@ -23,14 +25,5 @@ $primColor: blue;
   }
 
   input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  &:focus{
-    background-color: #ddd;
-    border:none;
-  }
+    @include formInput()
 }

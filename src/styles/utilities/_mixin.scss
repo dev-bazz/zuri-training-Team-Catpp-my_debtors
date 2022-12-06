@@ -1,0 +1,13 @@
+@use "./functions" as * ;
+
+@mixin formInput() {
+	width: 100%;
+	padding: px-rem(12) px-rem(20);
+	margin: px-rem(8) 0;
+	border: px-rem(1) solid #ccc;
+	box-sizing: border-box;
+	&:focus {
+		background-color: #ddd;
+		border: none;
+	}
+}

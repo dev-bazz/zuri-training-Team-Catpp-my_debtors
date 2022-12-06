@@ -10,25 +10,31 @@
 </head>
 
 <body>
-  <div class="Container">
+  <form class="sign-in">
     <!--       Heading of Page -->
-    <h1> Welcome Back! </h1>
-    <p> Please enter your details</p>
+    <div class="sign-in__element">
+      <h1> Welcome Back! </h1>
+      <p> Please enter your details</p>
+    </div>
     <hr>
 
-    <label> Email</label>
-    <input type="text" placeholder="Enter your Email " name="Email" id="email" required>
+    <div class="sign-in__element">
+      <label> Email</label>
+      <input type="text" placeholder="Enter your Email " name="Email" id="email" required>
+    </div>
 
     <!-- Password Section -->
-    <label>Password</label>
-    <input type="password" placeholder="type in password" name="psw" id="psw" required>
+    <div class="sign-in__element">
+      <label>Password</label>
+      <input type="password" placeholder="type in password" name="psw" id="psw" required>
+    </div>
 
     <button type="submit" class="loginbtn">Sign In</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember">Remember for 30days
-    </label>
+
+      <input type="checkbox" checked="checked" name="remember" aria-label="checkbox">Remember for 30days
+
 
     <p>Dont have an account?<a href="register.html"> Sign Up</a></p>
-  </div>
+  </form>
 </body>
 </html>
