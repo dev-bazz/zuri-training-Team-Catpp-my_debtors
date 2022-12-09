@@ -71,6 +71,20 @@ select {
     scroll-behavior: auto !important;
   }
 }
+a {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 1em 1em;
+  margin-block: 2rem;
+}
+a:active {
+  background-color: blue;
+}
+
+li {
+  margin-block: 2rem;
+}
+
 .sign-in {
   margin: auto;
   max-width: 43.75rem;

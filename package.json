@@ -1,8 +1,9 @@
 {
   "dependencies": {
+    "axios": "^1.2.1",
     "sass": "^1.56.1"
   },
   "scripts": {
-"scss-css": "sass -w src/styles/styles.scss style.css"
+    "scss-css": "sass -w src/styles/styles.scss style.css"
   }
 }
