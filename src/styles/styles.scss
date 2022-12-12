@@ -1,5 +1,7 @@
 // Global Reset
 @use "./reset";
+ 
+
 
 //  Utilities
 @use  "./utilities/utilities";
@@ -9,7 +11,7 @@
 
 // Pages
 @use "./pages/login";
-
+@use "./pages/register";
 
 
 @media (max-width: 408px) {

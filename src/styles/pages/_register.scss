@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+.register-page {
+  font-family: 'Poppins', sans-serif;
+  .register-wrapper {
+    .register-form {
+      width: 100%;
+      padding: 24px 17px;
+      .form-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 55px;
+        margin-bottom: 34px;
+        .buttons {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          span {
+            background-color: $primColor;
+            width: 220px;
+            border-radius: 8px;
+            padding: 16px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      form.admin-form {
+        // display: none;
+        grid-template-rows: repeat(7, auto);
+      }
+      .user-form {
+        display: none;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 48px;
+        grid-row-gap: 17px;
+        .gender {
+          display: flex;
+          flex-direction: column;
+        }
+
+        select, input {
+          height: 72px;
+          border-radius: 10px;
+          width: 100%;
+          background-color: $inputBg;
+          font-size: 14px;
+          border: none;
+          padding: 15px;
+          outline-color: $primColor;
+        }
+
+        input::placeholder {
+          font-size: 14px;
+          color: $inputText;
+        }
+
+        .school-name, .email-address, .password, .submit {
+          grid-column: 1 / -1;
+        }
+
+        .submit {
+          padding-top: 46px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          button {
+            max-width: 354px;
+            width: 100%;
+            display: inline-block;
+            border: none;
+            border-radius: 10px;
+            padding: 16px;
+            color: white;
+            background-color: $primColor;
+            margin-bottom: 29px;
+          }
+          .SignIn {
+            p {
+              color: black;
+              a {
+                color: $primColor;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .register-image {
+      height: 100%;
+      width: 100%;
+      display: none;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .register-wrapper {
+      width: 100%;
+      display: flex;
+      .register-form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .form-wrapper {
+          max-width: 537px;
+          width: 100%;
+        }
+      }
+      .register-image {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
