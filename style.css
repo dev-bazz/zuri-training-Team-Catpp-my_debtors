@@ -1,18 +1,247 @@
-/* Error: Undefined variable.
- *    ,
- * 24 |             background-color: $primColor;
- *    |                               ^^^^^^^^^^
- *    '
- *   src\styles\pages\_register.scss 24:31  @use
- *   src\styles\styles.scss 14:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 24 \2502              background-color: $primColor;\d\a    \2502                                ^^^^^^^^^^\a    \2575 \a   src\\styles\\pages\\_register.scss 24:31  @use\a   src\\styles\\styles.scss 14:1            root stylesheet";
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+li {
+  margin-block: 2rem;
+}
+
+.sign-in {
+  margin: auto;
+  max-width: 43.75rem;
+  padding: 1rem;
+}
+.sign-in h1, .sign-in p {
+  text-align: center;
+}
+.sign-in button {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 3.125rem;
+  background-color: #663398;
+  color: #ffffff;
+}
+.sign-in:hover {
+  opacity: 0.9;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  border: 0.0625rem solid #ccc;
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  border: none;
+}
+
+.register-page {
+  font-family: "Poppins", sans-serif;
+}
+.register-page .register-wrapper .register-form {
+  width: 100%;
+  padding: 24px 17px;
+}
+.register-page .register-wrapper .register-form .form-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 55px;
+  margin-bottom: 34px;
+}
+.register-page .register-wrapper .register-form .form-heading .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.register-page .register-wrapper .register-form .form-heading .buttons span {
+  background-color: #663398;
+  width: 220px;
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-page .register-wrapper .register-form form.admin-form {
+  grid-template-rows: repeat(7, auto);
+}
+.register-page .register-wrapper .register-form .user-form {
+  display: none;
+}
+.register-page .register-wrapper .register-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 48px;
+  grid-row-gap: 17px;
+}
+.register-page .register-wrapper .register-form form .gender {
+  display: flex;
+  flex-direction: column;
+}
+.register-page .register-wrapper .register-form form select, .register-page .register-wrapper .register-form form input {
+  height: 72px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #CFCCD2;
+  font-size: 14px;
+  border: none;
+  padding: 15px;
+  outline-color: #663398;
+}
+.register-page .register-wrapper .register-form form input::placeholder {
+  font-size: 14px;
+  color: #98949B;
+}
+.register-page .register-wrapper .register-form form .school-name, .register-page .register-wrapper .register-form form .email-address, .register-page .register-wrapper .register-form form .password, .register-page .register-wrapper .register-form form .submit {
+  grid-column: 1/-1;
+}
+.register-page .register-wrapper .register-form form .submit {
+  padding-top: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-page .register-wrapper .register-form form .submit button {
+  max-width: 354px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  color: white;
+  background-color: #663398;
+  margin-bottom: 29px;
+}
+.register-page .register-wrapper .register-form form .submit .SignIn p {
+  color: black;
+}
+.register-page .register-wrapper .register-form form .submit .SignIn p a {
+  color: #663398;
+  text-decoration: none;
+}
+.register-page .register-wrapper .register-image {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .register-page .register-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .register-page .register-wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .register-page .register-wrapper .register-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .register-page .register-wrapper .register-form .form-wrapper {
+    max-width: 537px;
+    width: 100%;
+  }
+  .register-page .register-wrapper .register-image {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 408px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
