@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Sign in</title>
+ <link rel="stylesheet" href="../../style.css" />
+ <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+</head>
+
+<body>
+ <div class="container_sign">
+  <div class="sign_page">
+   <div class="left">
+    <div class="logo_sign">
+     <img src="../assets/signin/Logo.png" class="logo" alt="logo" />
+    </div>
+
+    <div class="welcome">
+     <h1>Welcome Back!</h1>
+    </div>
+
+    <div class="p">
+     <p>please enter your details</p>
+    </div>
+
+    <div class="button_holder">
+     <div class="btn">
+      <button class="userBtn active">USER</button>
+      <button class="adminBtn">Admin</button>
+     </div>
+    </div>
+
+    <div class="sign_form">
+     <div class="inner_form">
+      <form class="form">
+       <div class="username">
+        <label>Username</label>
+        <input type="text" required placeholder="Enter your username" name="text" id="text" />
+       </div>
+
+       <div class="password">
+        <label>Password</label>
+        <input type="password" required placeholder="Enter your password" name="password" id="password" />
+       </div>
+
+       <div class="rem">
+        <span>
+         <input type="checkbox" class="box" />Remember me
+        </span>
+        <span>Forgot password?</span>
+       </div>
+
+       <div class="login">
+        <input type="button" value="Log in" />
+       </div>
+
+       <div class="signup_link">
+        Don't have an account? <a href="#">Sign Up</a>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+
+   <div class="right_sign">
+    <img src="../assets/signin/pana.png" alt="pana" />
+   </div>
+  </div>
+ </div>
+
+ <script src="../logic/sign.js"></script>
+</body>
+
+</html>
