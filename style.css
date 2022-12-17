@@ -112,8 +112,11 @@ li {
 }
 
 .homepage {
-  background-color: #CFDAF1;
-  background-image: url("../../assets/homepage/bg.png");
+  background-color: #cfdaf1;
+  background-image: url(/src/assets/homepage/nn.svg);
+  background-repeat: no-repeat;
+  background-size: 9.375rem;
+  background-position: right 0;
 }
 
 * {
