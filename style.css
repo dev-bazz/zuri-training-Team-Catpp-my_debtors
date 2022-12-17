@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "poppins";
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,6 +76,38 @@ select {
 }
 li {
   margin-block: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+}
+.main-nav .logo-svg {
+  width: 5.625rem;
+  height: 4.375rem;
+}
+.main-nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 76.625rem;
+  align-items: center;
+}
+.main-nav .nav-content ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.main-nav .nav-content ul li:last-child {
+  background-color: #b299cb;
+  padding-block: 0.5rem;
+  padding-inline: 0.75rem;
+}
+.main-nav .nav-content ul a {
+  text-decoration: none;
+  color: #0c0b0b;
+  font-family: "poppins";
 }
 
 * {

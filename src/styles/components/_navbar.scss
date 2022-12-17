@@ -1,5 +1,40 @@
+@use "../utilities/utilities" as *;
 
+li {
+	margin-block: 2rem;
+}
 
-li{
-  margin-block: 2rem;
+.main-nav {
+	display: flex;
+	justify-content: center;
+	padding-block: px-rem(16);
+	.logo-svg {
+		width: px-rem(90);
+		height: px-rem(70);
+	}
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: px-rem(1226);
+		align-items: center;
+
+		ul {
+			display: flex;
+			gap: px-rem(32);
+			align-items: center;
+
+			li:last-child {
+				background-color: #b299cb;
+				padding-block: px-rem(8);
+				padding-inline: px-rem(12);
+			}
+
+			a {
+				text-decoration: none;
+				color: #0c0b0b;
+        font-family: 'poppins';
+			}
+		}
+	}
 }
