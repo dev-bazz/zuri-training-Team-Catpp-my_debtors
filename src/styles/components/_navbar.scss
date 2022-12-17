@@ -8,6 +8,8 @@ li {
 	display: flex;
 	justify-content: center;
 	padding-block: px-rem(16);
+
+	// Nav Logo
 	.logo-svg {
 		width: px-rem(90);
 		height: px-rem(70);
@@ -19,6 +21,7 @@ li {
 		max-width: px-rem(1226);
 		align-items: center;
 
+		// Navigation Items --------------------------------
 		ul {
 			display: flex;
 			gap: px-rem(32);
@@ -28,12 +31,13 @@ li {
 				background-color: #b299cb;
 				padding-block: px-rem(8);
 				padding-inline: px-rem(12);
+				border-radius: px-rem(8);
 			}
 
 			a {
 				text-decoration: none;
 				color: #0c0b0b;
-        font-family: 'poppins';
+				font-family: "poppins";
 			}
 		}
 	}
