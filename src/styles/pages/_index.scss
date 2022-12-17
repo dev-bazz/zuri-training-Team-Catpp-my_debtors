@@ -4,6 +4,25 @@
 	background-color: #cfdaf1;
 	background-image: url(/src/assets/homepage/nn.svg);
 	background-repeat: no-repeat;
-  background-size: px-rem(150) ;
-  background-position: right 0;
+	background-size: px-rem(150);
+	background-position: right 0;
+
+	&-content {
+		max-width: px-rem(map-get($container_sizes, "lg"));
+		margin-inline: auto;
+    margin-top: px-rem(60);
+
+    .hero-section{
+      display: flex;
+      justify-content: space-between;
+      &> *{
+        &:nth-child(2){
+          max-width: px-rem(644);
+        }
+        &:nth-child(1){
+          padding-top: px-rem(90);
+        }
+      }
+    }
+	}
 }

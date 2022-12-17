@@ -18,7 +18,7 @@ li {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		max-width: px-rem(1226);
+		max-width: px-rem(map-get($container_sizes, "lg"));
 		align-items: center;
 
 		// Navigation Items --------------------------------

@@ -118,6 +118,21 @@ li {
   background-size: 9.375rem;
   background-position: right 0;
 }
+.homepage-content {
+  max-width: 76.625rem;
+  margin-inline: auto;
+  margin-top: 3.75rem;
+}
+.homepage-content .hero-section {
+  display: flex;
+  justify-content: space-between;
+}
+.homepage-content .hero-section > *:nth-child(2) {
+  max-width: 40.25rem;
+}
+.homepage-content .hero-section > *:nth-child(1) {
+  padding-top: 5.625rem;
+}
 
 * {
   margin: 0;
