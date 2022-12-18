@@ -1,3 +1,4 @@
+
 const userBtn = document.querySelector(".userBtn");
 const adminBtn = document.querySelector(".adminBtn");
 const userForm = document.querySelector(".user-form");
